@@ -7,11 +7,12 @@ import StreamShow from "./streams/StreamShow";
 import StreamCreate from "./streams/StreamCreate";
 import StreamEdit from "./streams/StreamEdit";
 import StreamDelete from "./streams/StreamDelete";
+import history from "../history";
 
 const App = () => {
     return (
         <div className="ui container">
-            <Router>
+            <Router history={history}>
                 <div>
                     <Header />
 
